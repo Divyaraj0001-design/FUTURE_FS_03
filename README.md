@@ -170,11 +170,9 @@ Potential additions for client projects:
 
 This project is a portfolio demonstration piece. Feel free to use it as inspiration for your own projects!
 
-## 👨‍💻 Developer
+## 🔗 Link
 
-Created as a portfolio demonstration of modern restaurant website design.
-
-**Contact for freelance work**: [Add your contact information]
+https://divyaraj0001-design.github.io/FUTURE_FS_03/
 
 ---
 
