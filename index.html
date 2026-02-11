@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Savoria - Fine dining restaurant offering exquisite cuisine, elegant ambiance, and unforgettable culinary experiences. Reserve your table today.">
+  <meta name="keywords" content="fine dining, restaurant, cuisine, reservation, gourmet food">
+  <meta name="author" content="Savoria Restaurant">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Savoria - Fine Dining Excellence">
+  <meta property="og:description" content="Experience culinary artistry at its finest. Book your table now.">
+  <meta property="og:type" content="website">
+
+  <title>Savoria - Fine Dining Excellence | Reserve Your Table Today</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header" id="header">
+    <nav class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">🍽️</span>
+        <span>Savoria</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#chef" class="nav-link">Chef</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#reservations" class="btn btn-primary">Book Table</a></li>
+      </ul>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <img src="hero-bg.jpg" alt="Elegant restaurant interior" class="hero-bg" id="heroBg">
+
+    <div class="hero-content fade-in">
+      <p class="hero-subtitle">Fine Dining Excellence</p>
+      <h1 class="hero-title">Welcome to Savoria</h1>
+      <p class="hero-description">Experience culinary artistry where every dish tells a story</p>
+
+      <div class="hero-buttons">
+        <a href="#reservations" class="btn btn-primary">Reserve A Table</a>
+        <a href="#menu" class="btn btn-secondary">View Menu</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Our Story</h2>
+
+      <div class="about-content">
+        <div class="about-image animate-on-scroll">
+          <img src="about-image.jpg" alt="Restaurant ambiance" id="aboutImg">
+        </div>
+
+        <div class="about-text animate-on-scroll">
+          <h2>A Legacy of Indian Culinary Excellence</h2>
+          <p>Since 1998, Savoria has been celebrating the rich flavors and traditions of Indian cuisine. We bring
+            together authentic Indian spices, time-honored recipes, and modern culinary techniques to create an
+            unforgettable dining experience that showcases the diversity of India's food culture.</p>
+
+          <p>We believe that dining is more than just a meal—it's a journey through India's culinary heritage. From the
+            moment you step through our doors, you're welcomed into a warm, traditional ambiance where aromatic spices
+            and authentic flavors tell the story of our rich culture.</p>
+
+          <p>Our team of expert Indian chefs prepares each dish with love and precision, using the freshest local
+            ingredients and authentic spices to create traditional favorites and innovative contemporary Indian cuisine.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15</div>
+              <div class="stat-label">Master Chefs</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">50K+</div>
+              <div class="stat-label">Happy Guests</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Our Menu</h2>
+
+      <div class="menu-filters animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="mains">Main Course</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Starters -->
+        <div class="menu-item animate-on-scroll" data-category="starters">
+          <img src="menu-bruschetta.jpg" alt="Paneer Tikka" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Paneer Tikka</h3>
+              </div>
+              <div class="menu-item-price">₹280</div>
+            </div>
+            <p class="menu-item-description">Cottage cheese marinated in yogurt and spices, grilled to perfection</p>
+            <span class="menu-item-category">Starter</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="starters">
+          <img src="menu-scallops.jpg" alt="Samosa Platter" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Samosa Platter</h3>
+              </div>
+              <div class="menu-item-price">₹180</div>
+            </div>
+            <p class="menu-item-description">Crispy golden samosas filled with spiced potatoes and peas, served with
+              chutneys</p>
+            <span class="menu-item-category">Starter</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="starters">
+          <img src="menu-carpaccio.jpg" alt="Veg Pakora" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Mix Veg Pakora</h3>
+              </div>
+              <div class="menu-item-price">₹220</div>
+            </div>
+            <p class="menu-item-description">Assorted vegetables dipped in gram flour batter and deep fried until crispy
+            </p>
+            <span class="menu-item-category">Starter</span>
+          </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-item animate-on-scroll" data-category="mains">
+          <img src="menu-steak.jpg" alt="Butter Chicken" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Butter Chicken</h3>
+              </div>
+              <div class="menu-item-price">₹380</div>
+            </div>
+            <p class="menu-item-description">Tender chicken in rich tomato and butter gravy with aromatic spices</p>
+            <span class="menu-item-category">Main</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="mains">
+          <img src="menu-salmon.jpg" alt="Veg Biryani" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Veg Biryani</h3>
+              </div>
+              <div class="menu-item-price">₹320</div>
+            </div>
+            <p class="menu-item-description">Fragrant basmati rice cooked with mixed vegetables and traditional spices
+            </p>
+            <span class="menu-item-category">Main</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="mains">
+          <img src="menu-risotto.jpg" alt="Dal Makhani" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Dal Makhani</h3>
+              </div>
+              <div class="menu-item-price">₹280</div>
+            </div>
+            <p class="menu-item-description">Black lentils cooked overnight with butter, cream and aromatic spices</p>
+            <span class="menu-item-category">Main</span>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-item animate-on-scroll" data-category="desserts">
+          <img src="menu-chocolate.jpg" alt="Gulab Jamun" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Gulab Jamun</h3>
+              </div>
+              <div class="menu-item-price">₹120</div>
+            </div>
+            <p class="menu-item-description">Soft milk dumplings soaked in fragrant rose and cardamom syrup</p>
+            <span class="menu-item-category">Dessert</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="desserts">
+          <img src="menu-tiramisu.jpg" alt="Rasmalai" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Rasmalai</h3>
+              </div>
+              <div class="menu-item-price">₹150</div>
+            </div>
+            <p class="menu-item-description">Soft cottage cheese discs in sweetened, thickened milk with cardamom and
+              nuts</p>
+            <span class="menu-item-category">Dessert</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="desserts">
+          <img src="menu-cheesecake.jpg" alt="Kulfi" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Kulfi Falooda</h3>
+              </div>
+              <div class="menu-item-price">₹180</div>
+            </div>
+            <p class="menu-item-description">Traditional Indian ice cream with vermicelli, rose syrup and basil seeds
+            </p>
+            <span class="menu-item-category">Dessert</span>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-item animate-on-scroll" data-category="drinks">
+          <img src="menu-wine.jpg" alt="Mango Lassi" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Mango Lassi</h3>
+              </div>
+              <div class="menu-item-price">₹150</div>
+            </div>
+            <p class="menu-item-description">Creamy yogurt drink blended with fresh mango pulp and cardamom</p>
+            <span class="menu-item-category">Drinks</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="drinks">
+          <img src="menu-cocktail.jpg" alt="Masala Chai" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Masala Chai</h3>
+              </div>
+              <div class="menu-item-price">₹80</div>
+            </div>
+            <p class="menu-item-description">Traditional Indian spiced tea brewed with ginger, cardamom and aromatic
+              spices</p>
+            <span class="menu-item-category">Drinks</span>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll" data-category="drinks">
+          <img src="menu-mocktail.jpg" alt="Fresh Lime Soda" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <div>
+                <h3 class="menu-item-title">Fresh Lime Soda</h3>
+              </div>
+              <div class="menu-item-price">₹60</div>
+            </div>
+            <p class="menu-item-description">Refreshing lime juice with soda, mint and choice of sweet or salt</p>
+            <span class="menu-item-category">Drinks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Gallery</h2>
+
+      <div class="gallery-grid">
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery-1.jpg" alt="Gourmet dish presentation" id="gallery1">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery-2.jpg" alt="Restaurant interior" id="gallery2">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery-3.jpg" alt="Chef preparing food" id="gallery3">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery-4.jpg" alt="Dessert presentation" id="gallery4">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery-5.jpg" alt="Wine cellar" id="gallery5">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery-6.jpg" alt="Table setting" id="gallery6">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHEF SECTION -->
+  <section class="chef section" id="chef">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Meet Our Chef</h2>
+
+      <div class="chef-content">
+        <div class="chef-image animate-on-scroll">
+          <img src="chef-image.jpg" alt="Executive Chef Vikram Malhotra" id="chefImg">
+        </div>
+
+        <div class="chef-text animate-on-scroll">
+          <h2>The Art of Culinary Mastery</h2>
+          <p class="chef-name">Chef Vikram Malhotra</p>
+
+          <p>With over 20 years of experience in prestigious kitchens across India and internationally, Chef Vikram
+            brings a wealth of knowledge and passion to every dish. His philosophy is simple: respect the ingredients,
+            honor tradition, and never stop innovating.</p>
+
+          <p>Trained in the finest culinary institutes of India and having worked in Michelin-starred restaurants
+            worldwide, Chef Vikram has mastered the art of blending traditional Indian flavors with contemporary
+            techniques. His dedication to excellence and creative approach to cuisine have earned him numerous accolades
+            and a loyal following.</p>
+
+          <p>At Savoria, Chef Vikram leads a talented team of culinary artists, each bringing their unique skills and
+            perspectives to create unforgettable dining experiences. Together, they craft menus that celebrate fresh,
+            locally-sourced ingredients and showcase the rich diversity of Indian cuisine with a modern twist.</p>
+
+          <p class="chef-signature">- Chef Vikram Malhotra</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">What Our Guests Say</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-rating">
+            ★★★★★
+          </div>
+          <p class="testimonial-text">"The best Indian food I've ever had! The Butter Chicken was absolutely divine, and
+            the Paneer Tikka was perfectly spiced. Every dish reminded me of home-cooked meals but with that restaurant
+            magic. Highly recommend!"</p>
+          <p class="testimonial-author">Priya Sharma</p>
+          <p class="testimonial-role">Food Blogger, Mumbai</p>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-rating">
+            ★★★★★
+          </div>
+          <p class="testimonial-text">"Chef Vikram has created something truly special here. The authentic flavors
+            combined with modern presentation make every meal memorable. We celebrated our anniversary here and the Dal
+            Makhani was out of this world!"</p>
+          <p class="testimonial-author">Rajesh & Anjali Verma</p>
+          <p class="testimonial-role">Regular Guests, Delhi</p>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-rating">
+            ★★★★★
+          </div>
+          <p class="testimonial-text">"Being from Pune, I'm very particular about my Indian food. Savoria exceeded all
+            my expectations! The spices are perfectly balanced, portions are generous, and the prices are very
+            reasonable. The Biryani is a must-try!"</p>
+          <p class="testimonial-author">Arjun Patel</p>
+          <p class="testimonial-role">IT Professional, Pune</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATIONS SECTION -->
+  <section class="reservations section" id="reservations">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Reserve Your Table</h2>
+
+      <div class="reservation-container animate-on-scroll">
+        <form class="reservation-form" id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of Guests *</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select...</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7+">7+ Guests</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Time *</label>
+              <select id="time" name="time" required>
+                <option value="">Select...</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="17:30">5:30 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Special Requests (Optional)</label>
+            <textarea id="message" name="message"
+              placeholder="Dietary restrictions, occasion, seating preferences..."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Reservation</button>
+          </div>
+
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+
+      <div class="contact-content">
+        <div class="contact-info animate-on-scroll">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Savoria Fine Dining<br>Marine Drive, Churchgate<br>Mumbai, Maharashtra 400020</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p>Reservations: +91 98765 43210<br>General Inquiries: +91 98765 43211</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">⏰</div>
+            <div class="contact-details">
+              <h3>Hours</h3>
+              <p>Monday - Thursday: 5:00 PM - 10:00 PM<br>Friday - Saturday: 5:00 PM - 11:00 PM<br>Sunday: 4:00 PM -
+                9:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info animate-on-scroll">
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>reservations@savoria.com<br>info@savoria.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div class="contact-details">
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <span>📷</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                  <span>👍</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <span>🐦</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Savoria Fine Dining. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#accessibility">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
